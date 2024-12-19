@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonuç</title>
+</head>
+<body>
+    <h1>Öğrenci Bilgileri</h1>
+
+    {% if ogrenci %}
+        <p><strong>Öğrenci Numarası:</strong> {{ numara }}</p>
+        <p><strong>Ad:</strong> {{ ogrenci['ad'] }}</p>
+        <p><strong>Soyad:</strong> {{ ogrenci['soyad'] }}</p>
+        <p><strong>Yaş:</strong> {{ ogrenci['yas'] }}</p>
+        <p><strong>Bölüm:</strong> {{ ogrenci['bolum'] }}</p>
+    {% else %}
+        <p>{{ mesaj }}</p>
+    {% endif %}
+
+    <br>
+    <a href="/">Geri Dön</a>
+</body>
+</html>
+
+
+
+
+
+
